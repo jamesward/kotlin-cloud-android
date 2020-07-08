@@ -1,6 +1,6 @@
 package com.example.helloworld
 
-import kotlinx.serialization.*
+import kotlinx.serialization.Serializable
 
 @Serializable
 data class Release(val name: String)

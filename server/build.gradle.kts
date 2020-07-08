@@ -6,7 +6,6 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(project(":common"))
-    //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
     implementation("io.ktor:ktor-server-cio:1.3.2")
     implementation("io.ktor:ktor-serialization:1.3.2")
     implementation("io.ktor:ktor-client-cio:1.3.2")
@@ -25,5 +24,4 @@ tasks.compileKotlin {
 
 application {
     mainClassName = "com.example.helloworld.ServerKt"
-    //applicationDefaultJvmArgs = "-D"
 }

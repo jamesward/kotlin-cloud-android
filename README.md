@@ -3,8 +3,13 @@
 ## Run Server Locally:
 
 Run the server:
+1. In one tab:
 ```
-./gradlew -t :server:run
+./gradlew -t :server:classes
+```
+1. In another tab:
+```
+./gradlew :server:run
 ```
 
 ## Deploy and Run Server on Cloud Run:
@@ -21,7 +26,7 @@ Run the server:
     cd android-sdk
     unzip PATH_TO_SDK_ZIP/sdk-tools-linux-VERSION.zip
     tools/bin/sdkmanager --update
-    tools/bin/sdkmanager "platforms;android-29" "build-tools;29.0.3" "extras;google;m2repository" "extras;android;m2repository"
+    tools/bin/sdkmanager "platforms;android-30" "build-tools;30.0.0" "extras;google;m2repository" "extras;android;m2repository"
     tools/bin/sdkmanager --licenses
     ```
 
@@ -42,7 +47,7 @@ Run the server:
             ```
             ./gradlew :android:installDebug
             ```
-        * From Android Studio / IntelliJ, navigate to `android/src/main/kotlin/io/grpc/examples/helloworld` and right-click on `MainActivity` and select `Run`.
+        * From Android Studio / IntelliJ, navigate to `android/src/main/kotlin/com/example/helloworld` and right-click on `MainActivity` and select `Run`.
 
     * Physical Device + Local Server:
         * From the command line:
@@ -53,7 +58,7 @@ Run the server:
                 ```
                 serverUrl=http://YOUR_MACHINE_IP:50051/
                 ```
-            1. Navigate to `android/src/main/kotlin/io/grpc/examples/helloworld` and right-click on `MainActivity` and select `Run`.
+            1. Navigate to `android/src/main/kotlin/com/example/helloworld` and right-click on `MainActivity` and select `Run`.
 
     * Emulator or Physical Device + Cloud:
         * From the command line:
@@ -64,4 +69,4 @@ Run the server:
                 ```
                 serverUrl=https://YOUR_SERVER/
                 ```
-            1. Navigate to `android/src/main/kotlin/io/grpc/examples/helloworld` and right-click on `MainActivity` and select `Run`.
+            1. Navigate to `android/src/main/kotlin/com/example/helloworld` and right-click on `MainActivity` and select `Run`.

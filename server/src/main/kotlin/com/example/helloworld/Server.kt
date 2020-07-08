@@ -15,8 +15,6 @@ import io.ktor.response.respond
 import io.ktor.routing.Routing
 import io.ktor.routing.get
 import io.ktor.serialization.json
-import io.ktor.server.engine.ApplicationEngineEnvironment
-import io.ktor.server.engine.applicationEngineEnvironment
 import io.ktor.server.cio.CIO as ServerCIO
 import io.ktor.client.engine.cio.CIO as ClientCIO
 import io.ktor.server.engine.embeddedServer

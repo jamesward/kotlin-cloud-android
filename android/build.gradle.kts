@@ -7,7 +7,6 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":common"))
     implementation("androidx.appcompat:appcompat:1.1.0")
-    //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7")
     implementation("io.ktor:ktor-client-android:1.3.2")
     implementation("io.ktor:ktor-client-serialization-jvm:1.3.2")
 }
